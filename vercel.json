@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "functions": {
+    "api/tweet.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "crons": [
+    {
+      "path": "/api/tweet",
+      "schedule": "*/15 * * * *"   // runs every 15 minutes
+    }
+  ]
+}
