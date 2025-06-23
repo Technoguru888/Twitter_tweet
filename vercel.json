@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "crons": [
+    {
+      "path": "/api/cron",
+      "schedule": "0 */3 * * *",
+      "body": { "job": "tweetEvery3Hours" }
+    },
+    {
+      "path": "/api/cron",
+      "schedule": "*/10 * * * *",
+      "body": { "job": "replyToMentionsEvery10Minutes" }
+    },
+    {
+      "path": "/api/cron",
+      "schedule": "0 */4 * * *",
+      "body": { "job": "monitorTrendsEvery4Hours" }
+    },
+    {
+      "path": "/api/cron",
+      "schedule": "0 9 * * *",
+      "body": { "job": "dailyFollowerAnalysis" }
+    },
+    {
+      "path": "/api/cron",
+      "schedule": "0 9 * * *",
+      "body": { "job": "postPollAt9AM" }
+    },
+    {
+      "path": "/api/cron",
+      "schedule": "0 */6 * * *",
+      "body": { "job": "searchTweetsUsingTrendsEvery6Hours" }
+    },
+    {
+      "path": "/api/cron",
+      "schedule": "0 */2 * * *",
+      "body": { "job": "scrapeAndPostEveryTwoHours" }
+    }
+  ]
+}
